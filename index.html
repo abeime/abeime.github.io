@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Abeime</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/favicon/site.webmanifest">
+	<style>
+		html{
+			overflow-y: auto;
+		}
+		.floating {
+			animation-name: floating;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+			margin-left: 30px;
+			margin-top: 5px;
+		}
+
+		@keyframes floating {
+			0% { transform: translate(0, 0px); }
+			50% { transform: translate(0, 10px); }
+			100% { transform: translate(0, -0px); }
+		}
+		.shadowRes{
+			text-shadow: 1px 1px #313131, 2px 2px #313131, 3px 3px #313131;
+		}
+		.shadow{
+			text-shadow: 1px 1px #313131, 2px 2px #313131, 3px 3px #313131;
+			-webkit-transition: all 0.2s ease-in;
+		}
+		.shadow:hover{
+			position: relative; top: -2px; left: -2px;
+			text-shadow: 1px 1px #313131, 2px 2px #313131, 3px 3px #313131, 4px 4px #313131, 5px 5px #313131;
+		}
+		.progress::-webkit-progress-value {
+			transition: width 0.5s ease,background-color 0.2s ease;
+		}
+	</style>
+	<script data-ad-client="ca-pub-9016362387317978" async
+		src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body oncopy="return false" oncut="return false" onpaste="return false">
+<section class="hero is-fullheight is-primary is-bold">
+	<div class="hero-body">
+		<div class="container has-text-centered">
+			<div class="ad">
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- Standard Ad -->
+				<ins class="adsbygoogle" style="display: block;padding: 1rem;height: 90px" data-ad-client="ca-pub-9016362387317978" data-ad-slot="2008944412"></ins>
+				<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+			<h2 class="title floating">I know everything</h2>
+			<h1 class="title is-1 pb-6">
+				<span class="has-text-warning">A</span>nd
+				<span class="has-text-warning">B</span>y
+				<span class="has-text-warning">E</span>verything
+				<span class="has-text-warning">I</span>
+				<span class="has-text-warning">M</span>ean
+				<span class="shadow"><span class="has-text-warning">E</span>verything</span>
+			</h1>
+			<h2 class="subtitle is-6 pb-5">Abeime is an AI which knows EVERYTHING! It uses Backpropagation, Case-Based Reasoning
+				(CBR) and Recurrent Neural Network to predict next to everything there is to know! Being an AI that passes the <a
+					class="has-text-warning" href="https://en.wikipedia.org/wiki/Turing_test">Turing's Test</a> its almost
+				creepy how much it knows.</h2>
+			<div class="columns">
+				<div class="column"></div>
+				<div class="column is-one-third">
+					<div class="field">
+						<div class="control has-icons-left">
+							<input placeholder="Question" class="input is-primary" type="text" name="question" id="question">
+							<span class="icon is-small is-left">
+								<i class="fas fa-question-circle"></i>
+							</span>
+						</div>
+					</div>
+					<div class="field">
+						<div class="control has-icons-left">
+							<input placeholder="Captcha" class="input is-primary" type="text" name="crossref" id="crossref">
+							<span class="icon is-small is-left">
+								<i class="fas fa-robot"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="column"></div>
+			</div>
+			<div class="tags pt-4 is-centered has-addons">
+				<span class="tag is-dark">Type this in the box above</span>
+				<span class="tag is-small is-light" id="captcha">Type this in the box above:</span>
+			</div>
+			<div class="columns">
+				<div class="column"></div>
+					<div class="column is-one-third pb-5">
+						<progress class="m-0 p-0 progress is-small mt-3" max="100" id="progress"></progress>
+						<p class="shadowRes subtitle is-3 has-text-weight-bold" id="result"></p>
+					</div>
+				<div class="column"></div>
+			</div>
+			<button class="button is-warning" onclick="reset();">Reset</button>
+			<button class="button is-warning" type="submit" onclick="submit()">Submit</button>
+		</div>
+	</div>
+	<div class="ad">
+		<!-- Standard Ad -->
+		<ins class="adsbygoogle" style="display: block;padding: 1rem;height: 90px" data-ad-client="ca-pub-9016362387317978"
+			data-ad-slot="2008944412"></ins>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+		<div class="content has-text-centered">
+			<p class="p-5">
+				CSS by
+				<a class="has-text-warning has-text-weight-bold" href="https://bulma.io">Bulma</a>. Website by
+				<a class="has-text-warning has-text-weight-bold" href="https://github.com/boidushya">Boidushya</a>. Inspired from
+				<a class="has-text-warning has-text-weight-bold" href="http://samsayssweetsounds.com/">Sam Says Sweet Sounds</a>.
+			</p>
+		</div>
+	</div>
+</section>
+
+<script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"
+integrity="sha512-b/htz6gIyFi3dwSoZ0Uv3cuv3Ony7EeKkacgrcVg8CMzu90n777qveu0PBcbZUA7TzyENGtU+qZRuFAkfqgyoQ=="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/addons/p5.sound.js"
+integrity="sha512-KxzVm+IqxNNq0+SzT/zzd5PHxY4LPrN+v5gZJ6+JKqjeU3Cr4y/djAg5eNlKDWurn1SeKZpql/yeOMWblMSzOg=="
+crossorigin="anonymous"></script>
+<script src="assets/js/p5.speech.js"></script>
+<script src="assets/js/index.min.js"></script>
+<!-- <script src="assets/js/index.js"></script> -->
+</body>
+</html>
