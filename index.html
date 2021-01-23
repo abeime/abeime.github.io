@@ -4,15 +4,42 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Abeime</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css"/>
+	<meta name="description" content="Abeime is an AI which knows EVERYTHING!
+				It uses state of the art AI tools to predict next to everything
+				there is to know!" />
+
+	<!-- Twitter Card data -->
+	<!-- <meta name="twitter:card" content="summary"> -->
+	<meta name="twitter:site" content="@publisher_handle">
+	<meta name="twitter:title" content="ABEIME">
+	<meta name="twitter:description" content="ABEIME is an AI which knows EVERYTHING!
+				It uses state of the art AI tools to predict next to everything
+				there is to know!">
+	<meta name="twitter:creator" content="@author_handle">
+	<!-- Twitter Summary card images must be at least 120x120px -->
+	<!-- <meta name="twitter:image" content="http://www.example.com/image.jpg"> -->
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="ABEIME" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://www.abei.me/" />
+	<!-- <meta property="og:image" content="http://example.com/image.jpg" /> -->
+	<meta property="og:description" content="Abeime is an AI which knows EVERYTHING!
+				It uses state of the art AI tools to predict next to everything
+				there is to know!" />
+	<meta property="og:site_name" content="ABEIME" />
+	<!-- <meta property="fb:admins" content="Facebook numeric ID" /> -->
+	<!-- Refs and Links-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" />
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 	<link rel="manifest" href="assets/favicon/site.webmanifest">
 	<style>
-		html{
+		html {
 			overflow-y: auto;
 		}
+
 		.floating {
 			animation-name: floating;
 			animation-duration: 2s;
@@ -23,23 +50,37 @@
 		}
 
 		@keyframes floating {
-			0% { transform: translate(0, 0px); }
-			50% { transform: translate(0, 10px); }
-			100% { transform: translate(0, -0px); }
+			0% {
+				transform: translate(0, 0px);
+			}
+
+			50% {
+				transform: translate(0, 10px);
+			}
+
+			100% {
+				transform: translate(0, -0px);
+			}
 		}
-		.shadowRes{
+
+		.shadowRes {
 			text-shadow: 1px 1px #313131, 2px 2px #313131, 3px 3px #313131;
 		}
-		.shadow{
+
+		.shadow {
 			text-shadow: 1px 1px #313131, 2px 2px #313131, 3px 3px #313131;
 			-webkit-transition: all 0.2s ease-in;
 		}
-		.shadow:hover{
-			position: relative; top: -2px; left: -2px;
+
+		.shadow:hover {
+			position: relative;
+			top: -2px;
+			left: -2px;
 			text-shadow: 1px 1px #313131, 2px 2px #313131, 3px 3px #313131, 4px 4px #313131, 5px 5px #313131;
 		}
+
 		.progress::-webkit-progress-value {
-			transition: width 0.5s ease,background-color 0.2s ease;
+			transition: width 0.5s ease, background-color 0.2s ease;
 		}
 	</style>
 	<script data-ad-client="ca-pub-9016362387317978" async
